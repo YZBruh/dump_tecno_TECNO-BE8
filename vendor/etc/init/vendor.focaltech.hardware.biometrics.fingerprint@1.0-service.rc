@@ -1,0 +1,30 @@
+# ------------------- focal fingerprint begin -------------------
+service vendor.focaltech.fps_hal /vendor/bin/hw/vendor.focaltech.hardware.biometrics.fingerprint@1.0-service
+	class hal
+	user system
+	group system
+
+on fs
+    chown system system /dev/focaltech_fp
+    chmod 664 /dev/focaltech_fp
+	chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed
+    chmod 664 /sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed
+	chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+    chmod 664 /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+	chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+    chmod 664 /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+	chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+    chmod 664 /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+
+    chmod 664 /proc/ppm/enabled
+    chown system system /proc/ppm/enabled
+
+    chmod 664 /proc/ppm/policy/ut_fix_core_num
+    chown system system /proc/ppm/policy/ut_fix_core_num
+
+    chmod 664 /proc/ppm/policy/ut_fix_freq_idx
+    chown system system /proc/ppm/policy/ut_fix_freq_idx
+
+on post-fs-data
+	mkdir /data/vendor/focaltech 0760 system system
+	restorecon /data/vendor/focaltech

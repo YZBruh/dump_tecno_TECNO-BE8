@@ -1,0 +1,122 @@
+#line 1 "device/mediatek/sepolicy/basic/plat_private/service_contexts"
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+memory_dumper u:object_r:mediaserver_service:s0
+imsa          u:object_r:radio_service:s0
+mtkIms        u:object_r:radio_service:s0
+GbaService    u:object_r:radio_service:s0
+
+#line 1 "device/mediatek/sepolicy/bsp/plat_private/service_contexts"
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+anrmanager                                              u:object_r:mtk_anrmanager_service:s0
+permrecords                                             u:object_r:mtk_permrecords_service:s0
+media.mmsdk                                             u:object_r:mtk_advcamserver_service:s0
+media.advcam                                            u:object_r:mtk_advcamserver_service:s0
+AAL                                                     u:object_r:aal_service:s0
+terservice                                              u:object_r:terservice_service:s0
+mtk-perfservice                                         u:object_r:mtk_perf_service:s0
+power_hal_mgr_service                                   u:object_r:mtk_power_hal_mgr_service:s0
+phoneEx                                                 u:object_r:mtk_radio_service:s0
+#TDD:add telephony baseline by wenlin.xiao for CCQHLEL-418 20210517 start
+tranphone                               u:object_r:tranphone_service:s0
+#TDD:add telephony baseline by wenlin.xiao for CCQHLEL-418 20210517 end
+telephony.mtkregistry                                   u:object_r:mtk_registry_service:s0
+iphonesubinfoEx                                         u:object_r:mtk_phonesubinfo_service:s0
+mtk_telecom                                             u:object_r:mtk_telecom_service:s0
+mtksimphonebook                                         u:object_r:mtk_simphonebook_service:s0
+data_shaping                                            u:object_r:mtk_data_shaping_service:s0
+mtkconnmetrics                                          u:object_r:mtk_connmetrics_service:s0
+duraspeed                                               u:object_r:mtk_duraspeed_service:s0
+capctrl                                                 u:object_r:mtk_radio_service:s0
+autoboot                                                u:object_r:mtk_autoboot_service:s0
+smartratswitch                                          u:object_r:mtk_radio_service:s0
+GoogleOtaBinder                                         u:object_r:ota_agent_service:s0
+GpuAppSpectatorService                                  u:object_r:gas_srv_service:s0
+FpsPolicyService                                        u:object_r:fpspolicy-server_service:s0
+isubstub                                                u:object_r:radio_service:s0
+wfo                                                     u:object_r:radio_service:s0
+imtksms                                                 u:object_r:radio_service:s0
+carrierexpress                                          u:object_r:mtk_carrierexpress_service:s0
+media.VTS                                               u:object_r:vtservice_service:s0
+mwis                                                    u:object_r:radio_service:s0
+PPLAgent                                                u:object_r:ppl_agent_service:s0
+nfc.st_ext                                              u:object_r:nfc_service:s0
+nfc_settings                                            u:object_r:nfc_service:s0
+gwsd                                                    u:object_r:mtk_gwsd_service:s0
+ctanetworkdatacontroller                                u:object_r:cta_networkdatacontroller_service:s0
+vodata                                                  u:object_r:mtk_vodata_service:s0
+vendor.trustonic.teeservice.ITeeService                 u:object_r:tee_service:s0
+vendor.trustonic.teeregistryservice.ITeeRegistryService u:object_r:teeregistry_service:s0
+mediatek.campostalgo                                    u:object_r:camerapostalgo_service:s0
+NvRAMAgent                                              u:object_r:nvram_agent_service:s0
+mobile                                                  u:object_r:mtk_mobile_service:s0
+msgmonitorservice                                       u:object_r:mtk_msg_monitor_service:s0
+epdg_service                                            u:object_r:mtk_epdg_service:s0
+rns                                                     u:object_r:mtk_rns_service:s0
+search_engine_service                                   u:object_r:mtk_search_engine_service:s0
+omadm_service                                           u:object_r:mtk_omadm_service:s0
+fm_radio_service                                        u:object_r:mtk_fm_radio_service:s0
+vow_bridge                                              u:object_r:mtk_vowbridge_service:s0
+appdetection                                            u:object_r:mtk_appdetection_service:s0
+media.VTS.HiDL                                          u:object_r:vtservice_hidl_service:s0
+
+# MICROTRUST Policy Rule
+# for ifaa upgrade on android O
+ifaa_service     u:object_r:teei_ifaa_service:s0
+#line 1 "vendor/tran_os/product/sepolicy/mtk/plat_private/service_contexts"
+# Transsion Top Secret
+
+# OS: add by shihuan.xu for securitycom 20191113 start
+securitycom_access       u:object_r:securitycom_access_service:s0
+# OS: add by shihuan.xu for securitycom 20191113 end
+# OS: add by tong.mo for os_audio_change 20200727 start
+os_audio_change       u:object_r:os_audio_change_service:s0
+# OS: add by tong.mo for os_audio_change 20200727 end
+# OS: add for OSQIDEV-3369(kolun) by zijiang.wang 20200730 start
+kolun                u:object_r:kolun_service:s0
+# OS: add for OSQIDEV-3369(kolun) by zijiang.wang 20200730 end
+
+# OS: add for OSQWRDEV-3079(sandaccessor) by zijiang.wang 20200924 start
+sand_accessor       u:object_r:sand_accessor_service:s0
+# OS: add for OSQWRDEV-3079(sandaccessor) by zijiang.wang 20200924 end
+
+# OS: add by minjie.pan for os_app_ops 20210308 start
+os_app_ops       u:object_r:os_app_ops_service:s0
+# OS: add by minjie.pan for os_app_ops 20210308 end
+
+#  OS: add for game mode by zijiang.wang 20210318 start
+gamemode_helper     u:object_r:gamemode_helper_service:s0
+# OS: add for game mode by zijiang.wang 20210318 end
+
+# OS: add for network rule by zijiang.wang 20211020 start
+particular_feature   u:object_r:particular_feature_service:s0
+# OS: add for network rule by zijiang.wang 20211020 end
+
+
+# OS: add by shihuan.xu for oem_unlock_data 20220805 start
+oem_unlock_data  u:object_r:oem_unlock_data_service:s0
+# OS: add by shihuan.xu for oem_unlock_data 20220805 end
+#line 1 "device/mediatek/sepolicy/custom/tranpowerhub/plat_private/service_contexts"
+tran_pwhub    u:object_r:tranpwhub_service:s0
+#line 1 "device/mediatek/sepolicy/custom/module/res_monitor/plat_private/service_contexts"
+tran_resmonitor     u:object_r:resmonitor_service:s0
+#line 1 "device/mediatek/sepolicy/custom/trandreamAnimation/plat_private/service_contexts"
+dream_animation                         u:object_r:dream_animation_service:s0
+#line 1 "device/mediatek/sepolicy/custom/tranlog/plat_private/service_contexts"
+tran_tranlog    u:object_r:tranlog_service:s0
+tranlog_sub     u:object_r:tranlogsub_service:s0
+#line 1 "device/mediatek/sepolicy/custom/tranaipowerlab/plat_private/service_contexts"
+tran_aipl    u:object_r:tranaipl_service:s0
+#line 1 "device/mediatek/sepolicy/custom/module/appm/plat_private/service_contexts"
+tran_appm    u:object_r:tran_appm_service:s0
+
+#line 1 "device/mediatek/sepolicy/custom/fingerprint/silead_tee/plat_private/service_contexts"
+
+com.silead.fingerprintService  u:object_r:silead_fp_service:s0
+#line 1 "device/mediatek/sepolicy/custom/hap/plat_private/service_contexts"
+hyperion_hap                              u:object_r:tran_hap_service:s0

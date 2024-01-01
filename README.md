@@ -1,0 +1,20 @@
+## sys_tssi_32_ago_tecno-user 12 SP1A.210812.016 318143 release-keys
+- Manufacturer: tecno
+- Platform: mt6761
+- Codename: TECNO-BE8
+- Brand: TECNO
+- Flavor: sys_tssi_32_ago_tecno-user
+- Release Version: 12
+- Kernel Version: 4.19.191
+- Id: SP1A.210812.016
+- Incremental: 230505V914
+- Tags: release-keys
+- CPU Abilist: armeabi-v7a,armeabi
+- A/B Device: true
+- Treble Device: true
+- Locale: en-US
+- Screen Density: 320
+- Fingerprint: TECNO/BE8-GL/TECNO-BE8:12/SP1A.210812.016/230505V680:user/release-keys
+- OTA version: 
+- Branch: sys_tssi_32_ago_tecno-user-12-SP1A.210812.016-318143-release-keys
+- Repo: tecno_tecno-be8_dump

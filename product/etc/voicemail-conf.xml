@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--TDD: add CMSFTASK-265 by pei.zhou 2021123 start  -->
+
+<voicemail>
+<voicemail numeric="65501" carrier="Vodacom" vmnumber="132" vmtag="" />
+<voicemail numeric="334020" carrier="Vodacom" vmnumber="*86" vmtag="" />
+<voicemail numeric="72402" carrier="TIM" vmnumber="*100" vmtag="" />
+<voicemail numeric="72403" carrier="TIM" vmnumber="*100" vmtag="" />
+<voicemail numeric="72404" carrier="TIM" vmnumber="*100" vmtag="" />
+<voicemail numeric="72408" carrier="TIM" vmnumber="*100" vmtag="" />
+<voicemail numeric="72405" carrier="Claro" vmnumber="*555" vmtag="" />
+<voicemail numeric="72416" carrier="Oi" vmnumber="*100" vmtag="" />
+<voicemail numeric="72431" carrier="Oi" vmnumber="*100" vmtag="" />
+<voicemail numeric="72406" carrier="Vivo" vmnumber="*555" vmtag="" />
+<voicemail numeric="72410" carrier="Vivo" vmnumber="*555" vmtag="" />
+<voicemail numeric="72411" carrier="Vivo" vmnumber="*555" vmtag="" />
+<voicemail numeric="72423" carrier="Vivo" vmnumber="*555" vmtag="" />
+<voicemail numeric="72439" carrier="Nextel" vmnumber="*100" vmtag="" />
+</voicemail>
+<!--TDD: add CMSFTASK-265 by pei.zhou 2021123 end  -->

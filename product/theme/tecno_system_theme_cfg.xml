@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<Document>
+<theme-info>
+    <id>-99</id>
+    <name>HIOS</name>
+    <filename>PartyTheme.apk</filename>
+	<string-id>HIOS_HIOS</string-id>
+    <filepath>product/theme/PartyTheme/PartyTheme.apk</filepath>
+</theme-info>
+</Document>

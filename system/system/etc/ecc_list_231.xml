@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EccTable>
+    <!--
+        Turkey
+        The attribute definition for tag EccEntry:
+        - Ecc: the emergnecy number
+        - Category: the service category
+        - Condition: there are following values:
+            - 0: ecc only when no sim
+            - 1: ecc always
+            - 2: MMI will show ecc but send to nw as normal call
+    -->
+    <!--SR: add reason 142402 update emergency number to Excel-0530 by aidonghu  20220608 start-->
+    <EccEntry Ecc="158" Category="0" Condition="1" />
+    <EccEntry Ecc="155" Category="0" Condition="1" />
+    <EccEntry Ecc="150" Category="0" Condition="1" />
+    <EccEntry Ecc="112" Category="0" Condition="1" />
+    <EccEntry Ecc="119" Category="0" Condition="1" />
+    <!--SR: add reason 142402 update emergency number to Excel-0530 by aidonghu  20220608 start-->
+</EccTable>

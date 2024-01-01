@@ -1,0 +1,140 @@
+[
+  {
+    "key": "charge_vibrate",
+    "type": "ab",
+    "auto_test": true,
+    "config": {
+      "enable_electric": false,
+      "enable_charge_light": false,
+      "enable_vibrate": true
+    }
+  },
+  {
+    "key": "fingerprint",
+    "type": "ab",
+    "auto_test": true,
+    "config":{
+      "result_success_code_focal_tee":-1,
+      "result_success_code_silead_tee":0
+    }
+  },
+  {
+    "key": "mic",
+    "type": "a"
+  },
+  {
+    "key": "headset",
+    "type": "a"
+  },
+  {
+    "key": "fm",
+    "type": "a",
+    "auto_test": true
+  },
+  {
+    "key": "lcd",
+    "type": "abm"
+  },
+  {
+    "key": "speaker",
+    "type": "a"
+  },
+  {
+    "key": "base_info",
+    "type": "ab",
+    "auto_test": true,
+    "config": {
+      "google_key": "doujia",
+      "tee_type": "doujia"
+    }
+  },
+  {
+    "key": "psensor_calibration",
+    "type": "ab",
+    "auto_test": true
+  },
+  {
+    "key": "psensor_test",
+    "type": "ab",
+    "auto_test": true
+  },
+  {
+    "key": "receiver_vibrate",
+    "type": "a"
+  },
+  {
+    "key": "back_camera2",
+    "type": "abm"
+  },
+  {
+    "key": "front_camera2",
+    "type": "abm"
+  },
+  {
+    "key": "flash",
+    "type": "abm",
+    "auto_test": true,
+    "config": {
+      "back_flash_path": "/sys/class/sub_torch/sub_torch/sub_torch_level",
+      "front_flash_path": "/sys/devices/virtual/torch/torch/torch_level",
+      "back_on": "11",
+      "back_off": "0",
+      "front_on": "11",
+      "front_off": "0"
+    }
+  },
+  {
+    "key": "search",
+    "type": "ab"
+  },
+  {
+    "key": "lsensor_calibration",
+    "type": "ab",
+    "auto_test": true
+  },
+  {
+    "key": "lsensor_test",
+    "type": "ab",
+    "auto_test": true
+  },
+  {
+    "key": "gsensor_calibration",
+    "type": "ab",
+    "auto_test": true
+  },
+  {
+    "key": "gsensor_test",
+    "type": "ab",
+    "auto_test": true
+  },
+  {
+    "key": "sensor",
+    "type": ""
+  },
+  {
+    "key": "tp",
+    "type": "abm"
+  },
+  {
+    "key": "key",
+    "type": "ab"
+  },
+  {
+    "key": "card",
+    "type": "abm",
+    "auto_test": true
+  },
+  {
+    "key": "light",
+    "type": ""
+  },
+  {
+    "key": "otg",
+    "type": "a",
+    "only_manual": true
+  },
+  {
+    "key": "gyroscope",
+    "type": ""
+  }
+]
